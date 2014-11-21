@@ -21,13 +21,14 @@ PRODUCT_PACKAGES += \
 	rmt_storage \
 	sct_service \
 	ta_qmi_service \
-	wcnss_addr \
 	tad_static \
+	wcnss_addr \
 	Bluetooth_cal \
 	General_cal \
 	Global_cal \
 	Hdmi_cal \
 	Headset_cal \
+	effect_init_params \
 	a225_pfp \
 	a225_pm4 \
 	a225p5_pm4 \
@@ -119,6 +120,7 @@ PRODUCT_PACKAGES += \
 	WCNSS_cfg \
 	WCNSS_qcom_cfg \
 	WCNSS_qcom_wlan_nv \
+	flashled_calc_parameters \
 	copybit.msm8974 \
 	nfc.msm8974 \
 	libMcClient \
@@ -133,6 +135,8 @@ PRODUCT_PACKAGES += \
 	libc2dcolorconvert \
 	libcnefeatureconfig \
 	libdivxdrmdecrypt \
+	libexcal_core \
+	libexcal_system \
 	libidd \
 	libkeyctrl \
 	libmiscta \

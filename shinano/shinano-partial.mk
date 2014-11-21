@@ -103,8 +103,6 @@ PRODUCT_PACKAGES += \
 	venus_b04 \
 	venus_mbn \
 	venus_mdt \
-	bcm4339_aps \
-	bcm4339_sta \
 	audio.primary.msm8974 \
 	copybit.msm8974 \
 	nfc_nci.msm8974 \
@@ -131,6 +129,7 @@ PRODUCT_PACKAGES += \
 	libta \
 	libvirtual \
 	effect_init_params \
+	libpn544_fw \
 	libpn547_fw \
 	eglsubAndroid \
 	libEGL_adreno \

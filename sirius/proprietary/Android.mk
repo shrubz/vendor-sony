@@ -46,19 +46,9 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/etc
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bcm4339
+LOCAL_MODULE := bcmdhd
 LOCAL_MODULE_OWNER := Sony Mobile
-LOCAL_SRC_FILES := lib/modules/bcm4339.ko
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .ko
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib/modules
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := scsi_wait_scan
-LOCAL_MODULE_OWNER := Sony Mobile
-LOCAL_SRC_FILES := lib/modules/scsi_wait_scan.ko
+LOCAL_SRC_FILES := lib/modules/bcmdhd.ko
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .ko
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES

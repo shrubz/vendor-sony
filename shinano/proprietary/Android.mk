@@ -964,26 +964,6 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/etc/firmware
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := bcm4339_aps
-LOCAL_MODULE_OWNER := Sony Mobile
-LOCAL_SRC_FILES := etc/firmware/wlan/bcmdhd/bcm4339_aps.bin
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .bin
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT)/etc/firmware/wlan/bcmdhd
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := bcm4339_sta
-LOCAL_MODULE_OWNER := Sony Mobile
-LOCAL_SRC_FILES := etc/firmware/wlan/bcmdhd/bcm4339_sta.bin
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .bin
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT)/etc/firmware/wlan/bcmdhd
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := audio.primary.msm8974
 LOCAL_MODULE_OWNER := Sony Mobile
 LOCAL_SRC_FILES := lib/hw/audio.primary.msm8974.so
@@ -1241,6 +1221,16 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := 
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT)/vendor/etc
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libpn544_fw
+LOCAL_MODULE_OWNER := Sony Mobile
+LOCAL_SRC_FILES := vendor/firmware/libpn544_fw.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT)/vendor/firmware
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)

@@ -14,7 +14,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(PRODUCT_PLATFORM),rhine)
+ifeq ($(PRODUCT_PLATFORM),Rhine)
 include $(CLEAR_VARS)
 LOCAL_MODULE := bt_addr
 LOCAL_MODULE_OWNER := Sony Mobile
@@ -96,9 +96,9 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/bin
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := wcnss_addr
+LOCAL_MODULE := tad_static
 LOCAL_MODULE_OWNER := Sony Mobile
-LOCAL_SRC_FILES := bin/wcnss_addr
+LOCAL_SRC_FILES := bin/tad_static
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := 
 LOCAL_MODULE_CLASS := EXECUTABLES
@@ -106,9 +106,9 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/bin
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := tad_static
+LOCAL_MODULE := wcnss_addr
 LOCAL_MODULE_OWNER := Sony Mobile
-LOCAL_SRC_FILES := bin/tad_static
+LOCAL_SRC_FILES := bin/wcnss_addr
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := 
 LOCAL_MODULE_CLASS := EXECUTABLES
@@ -161,6 +161,17 @@ LOCAL_MODULE_OWNER := Sony Mobile
 LOCAL_SRC_FILES := etc/Headset_cal.acdb
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .acdb
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT)/etc
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := effect_init_params
+LOCAL_MODULE_OWNER := Sony Mobile
+LOCAL_SRC_FILES := etc/effect_init_params
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_STEM := effect_init_params
+LOCAL_MODULE_SUFFIX := 
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT)/etc
 include $(BUILD_PREBUILT)
@@ -1134,6 +1145,16 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/etc/firmware/wlan/prima
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := flashled_calc_parameters
+LOCAL_MODULE_OWNER := Sony Mobile
+LOCAL_SRC_FILES := etc/flashled_calc_parameters.cfg
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .cfg
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT)/etc
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := copybit.msm8974
 LOCAL_MODULE_OWNER := Sony Mobile
 LOCAL_SRC_FILES := lib/hw/copybit.msm8974.so
@@ -1267,6 +1288,26 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libdivxdrmdecrypt
 LOCAL_MODULE_OWNER := Sony Mobile
 LOCAL_SRC_FILES := lib/libdivxdrmdecrypt.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libexcal_core
+LOCAL_MODULE_OWNER := Sony Mobile
+LOCAL_SRC_FILES := lib/libexcal_core.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT)/lib
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libexcal_system
+LOCAL_MODULE_OWNER := Sony Mobile
+LOCAL_SRC_FILES := lib/libexcal_system.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES

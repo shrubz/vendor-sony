@@ -182,6 +182,9 @@ PRODUCT_PACKAGES += \
 	libqmi_encdec \
 	libqmiservices \
 	libril-qc-qmi-1 \
+	libril \
+	librilutils \
+	libreference-ril \
 	librs_adreno \
 	librs_adreno_sha1 \
 	libsc-a2xx \

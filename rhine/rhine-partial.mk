@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
 	flashled_calc_parameters \
 	copybit.msm8974 \
 	nfc.msm8974 \
+	camera.msm8974 \
 	libMcClient \
 	libMcRegistry \
 	libOmxAacEnc \
@@ -154,20 +155,43 @@ PRODUCT_PACKAGES += \
 	libOmxVdec \
 	libOmxVenc \
 	libc2dcolorconvert \
+	libcacao_chokoball \
+	libcacao_client \
+	libcacao_common \
+	libcacao_imgproc \
+	libcacao_jpeg \
+	libcacao_pal \
+	libcacao_parammgr \
+	libcacao_service \
+	libcald_client \
+	libcald_imageutil \
+	libcald_pal \
+	libcald_server \
+	libcald_util \
+    libcamera_clientsemc \
+	libcammw \
 	libcnefeatureconfig \
 	libdivxdrmdecrypt \
 	libexcal_core \
 	libexcal_system \
+	libface \
+	libface_wrapper \
 	libidd \
 	libkeyctrl \
+	liblights-core \
 	libmiscta \
 	libmm-omxcore \
+	libmmcamera_interface \
 	libmmjpeg_interface \
 	libnpfinal \
 	libpin-cache \
 	libprotobuf-c \
 	libqomx_core \
+	libsomc_chocoballpal \
+	libsony_chokoball \
+	libsony_chokoballrsc \
 	libstagefrighthw \
+	libsys-utils \
 	libta \
 	effect_init_params \
 	libpn544_fw \

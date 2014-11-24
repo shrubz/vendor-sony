@@ -187,7 +187,7 @@ PRODUCT_PACKAGES += \
 	libpin-cache \
 	libprotobuf-c \
 	libqomx_core \
-	libsomc_chocoballpal \
+	libsomc_chokoballpal \
 	libsony_chokoball \
 	libsony_chokoballrsc \
 	libstagefrighthw \
